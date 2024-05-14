@@ -5,21 +5,19 @@
     <style>
       .thumbnail {
         width: 300px;
-       display: block;
+        /* height: 200px; no height so we dont have to so much styling  */
+        display: block;
       }
       .search-bar {
-        width: 300px;
-        height: 30px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        margin-top: 10px;
+        font-size: 20px;
+        margin-left: 12px;
       }
+
+
       .video-title {
        width: 300px;
       }
-      .video-stats {
-       width: 300px;
-      }
+     
      
     </style>
   
@@ -29,16 +27,18 @@
 
    
 
-      <div class="video-preview">  <input class="search-bar" type="text" placeholder="Search">
+      <div class="video-preview"> 
+         <input class="search-bar" type="text" placeholder="Search">
         <img  class= "thumbnail" src="thumbnails/thumbnail-1.webp">
         <main>
-    
+          <!-- Creating 3 paragraphs -->
           <p class="video-title"> Talking Tech and Ai with Google CEO Sundar Pichai</p>
-
-          <p class="video-stats"> 3.4M Views &#183;  6 months ago </p>
 
           <p class="video-author"> Marques Brownlee &#10003; </p>
 
+          <p class="video-stats"> 3.4M Views &#183;  6 months ago </p>
+
+         
           <p class="video-description">
             Marques Brownlee sits down with Sundar Pichai to discuss the future of technology and AI at Google.
           </p> 
