@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Youtube.com Clone</title>
-    <style>
-      .thumbnail {
-        width: 300px;
-        /* height: 200px; no height so we dont have to so much styling  */
-        display: block;
-      }
-      .search-bar {
-        font-size: 20px;
-        margin-left: 12px;
-      }
+
+<head>
+  <title>Youtube.com Clone</title>
+  <style>
+    .thumbnail {
+      width: 300px;
+      /* height: 200px; no height so we dont have to so much styling  */
+      display: block;
+    }
+
+    .search-bar {
+      display: block;
+      /* font-size: 20px;
+        margin-left: 12px; */
+    }
 
 
-      .video-title {
-       width: 300px;
-      }
-     
-     
-    </style>
-  
-    <link rel="stylesheet" href="youtube.css"/>
-  </head>
-  <body>
+    .video-title {
+      width: 300px;
+    }
 
-   
+    .video-preview {
+      width: 300px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 15px;
+    }
+  </style>
 
-      <div class="video-preview"> 
-         <input class="search-bar" type="text" placeholder="Search">
-        <img  class= "thumbnail" src="thumbnails/thumbnail-1.webp">
-        <main>
-          <!-- Creating 3 paragraphs -->
-          <p class="video-title"> Talking Tech and Ai with Google CEO Sundar Pichai</p>
+  <link rel="stylesheet" href="youtube.css" />
+</head>
 
-          <p class="video-author"> Marques Brownlee &#10003; </p>
+<body>
+  <input class="search-bar" type="text" placeholder="Search">
 
-          <p class="video-stats"> 3.4M Views &#183;  6 months ago </p>
 
-         
-          <p class="video-description">
-            Marques Brownlee sits down with Sundar Pichai to discuss the future of technology and AI at Google.
-          </p> 
-        </div>
-      
-    </main>
-  </body>
+  <div class="video-preview">
+    <div> <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+    </div>
+    <div>
+      <div> <img src="channel-pictures/channel-1.jpeg">
+
+      </div>
+      <div>
+        <p class="video-title"> Talking Tech and Ai with Google CEO Sundar Pichai</p>
+
+        <p class="video-author"> Marques Brownlee &#10003; </p>
+
+        <p class="video-stats"> 3.4M Views &#183; 6 months ago </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="video-preview">
+    <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+    <main>
+      <!-- Creating 3 paragraphs -->
+      <p class="video-title"> Try Not To Laugh Challenge #9</p>
+
+      <p class="video-author"> Markiplier &#10003; </p>
+
+      <p class="video-stats"> 19M Views &#183; 4 years ago </p>
+
+  </div>
+
+
+
+  </main>
+</body>
